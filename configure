@@ -27,7 +27,9 @@ usage() {
 	exit 100
 }
 
-known_arches=(riscv64)
+known_arches=(aarch64 riscv64)
+# shellcheck disable=SC2034 # Only accessed indirectly.
+tool_prefixes_aarch64=(aarch64-none-elf- aarch64-none-elf- aarch64-unknown-elf-)
 # shellcheck disable=SC2034 # Only accessed indirectly.
 tool_prefixes_riscv64=(riscv64-none-elf- riscv-none-elf- riscv64-unknown-elf-)
 
