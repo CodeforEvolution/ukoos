@@ -5,7 +5,7 @@
  */
 
 ENTRY(_start)
-OUTPUT_FORMAT(elf64-littleriscv)
+OUTPUT_FORMAT(elf64-littleaarch64)
 
 SECTIONS
 {

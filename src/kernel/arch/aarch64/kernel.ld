@@ -5,7 +5,7 @@
  */
 
 ENTRY(_start)
-OUTPUT_FORMAT(elf64-littleriscv)
+OUTPUT_FORMAT(elf64-littleaarch64)
 
 PHDRS
 {
@@ -16,12 +16,7 @@ PHDRS
 
 SECTIONS
 {
-	/**
-	 * We store the kernel in the top 1GiB of virtual memory. This lets us
-	 * be relatively agnostic to what the lowest address of himem is, which
-	 * would depend on whether we're using Sv39, Sv48, Sv57, etc.
-	 */
-	. = 0xffffffffc0000000;
+	. = 0xffff000000000000;
 
 	PROVIDE(_kernel_start = .);
 

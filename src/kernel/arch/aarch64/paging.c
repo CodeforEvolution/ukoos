@@ -5,8 +5,8 @@
  */
 
 #include <align.h>
-#include <arch/riscv64/constants.h>
-#include <arch/riscv64/insns.h>
+#include <arch/aarch64/constants.h>
+#include <arch/aarch64/insns.h>
 #include <mm/paging.h>
 #include <mm/physical_alloc.h>
 #include <mm/virtual_alloc.h>

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
 
-#include <arch/riscv64/insns.h>
+#include <arch/aarch64/insns.h>
 #include <random.h>
 
 void arch_entropy_pool_seed_early(void) {

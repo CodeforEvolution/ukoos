@@ -14,7 +14,6 @@ kernel-objs-c += arch/aarch64/paging
 kernel-objs-c += arch/aarch64/panic
 kernel-objs-c += arch/aarch64/physical
 kernel-objs-c += arch/aarch64/random
-kernel-objs-c += arch/aarch64/sbi
 
 $(eval $(call compute_component_variables,kernel))
 

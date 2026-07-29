@@ -32,6 +32,8 @@ _start:
 
 .section .text
 
+// We will use x19 as a callee-saved register that is clobbered
+
 /**
  * A handler for an unrecoverable exception.
  */
